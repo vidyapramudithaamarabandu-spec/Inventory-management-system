@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='eng'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Supplier Registration</title>
+	<link rel="icon" type="Image/png" href="Images/Logo.png">
+	<style>
+	body{
+		font-family:Times New Romen;
+		background-color:#f4f7f6;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		height:100vh;
+		margin:0;
+	}
+	.form-container{
+		background-color:#ffffff;
+		padding:30px 40px;
+		border-radius:8px;
+		box-shadow:0 4px 10px rgba(0,0,0,0.1)
+		width:100%;
+		max-width:400px;
+	}
+	h2{
+		text-align:center;
+		color:#3333333;
+		margin-bottom:24px;
+	}
+	.form-group{
+		margin-bottom:15px;
+	}
+	lable{
+		display:block;
+		margin-bottom:5px;
+		font-weigth:600;
+		color:#555555;
+		font-size:14px;
+	}
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"],
+	text-area{
+		width:100%;
+		padding:10px;
+		border-radius:4px;
+		box-sizing:border-box;
+		font-size:14px;
+		font-family:inherit;
+	}
+	input[type="text"]:focus,
+	input[type="tel"]:focus,
+	input[type="email"]:focus,
+	textarea:focus{
+		border-color:#007bff;
+		outline:none;
+		box-shadow:0 0 4px rgba(0,123,255,0.2)
+	}
+	text-area{
+		resize:vertical;
+		height:80px;
+	}
+	button{
+		width:100%;
+		padding:12px;
+		background-color:#007bff;
+		border:none;
+		color:white;
+		font-size:16px;
+		font-weight:bold;
+		border-radius:4px;
+		cursor:pointer;
+		transition:background-color 0.3s;
+		margin-top:10px;
+	}
+	button:hover{
+		background-color:#0056b3;
+	}
+	</style>
+</head>
+<body>
+	<form action="SUPPLIER.php" method="POST">
+	<h1>ADD OR REMOVE SUPPLIER</h1>
+	Supplier ID:<input type="text" name="supplier_id" required><br><br>
+	Name:<input type="text" name="name" required><br><br>
+	Contact No:<input type="text" name="contact_no" required><br><br>
+	Address:<input type="text" name="address" required><br><br>
+	
+	<button type="Submit" name="submit_supplier">ADD</button>
+	<button type="Delete">REMOVE</button>
+	<button type="Reset">Reset</button>
+	</form>
+</body>
+</html>

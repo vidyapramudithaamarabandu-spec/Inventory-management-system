@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADD PRODUCT</title>
+	<link rel="icon" type="Image/png" href="Images/Logo.png">
+	<style>
+		body {
+			font-family: 'Times New Roman', Times, serif;
+			background-color: #f4f7f6;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+		}
+		.form-container {
+			background-color: #ffffff;
+			padding: 30px 40px;
+			border-radius: 8px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+			width: 100%;
+			max-width: 400px;
+		}
+		h1 {
+			text-align: center;
+			color: #333333;
+			font-size: 22px;
+			margin-top: 0;
+			margin-bottom: 24px;
+		}
+		input[type="text"] {
+			width: 100%;
+			padding: 8px;
+			margin-bottom: 15px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		.button-group {
+			display: flex;
+			gap: 10px;
+			margin-top: 10px;
+		}
+		button {
+			flex: 1;
+			padding: 10px;
+			border: none;
+			color: white;
+			font-weight: bold;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		button[name="submit_supplier"] { background-color: #007bff; } /* ADD button */
+		button[name="remove_product"] { background-color: #d9534f; } /* REMOVE button */
+		button[type="reset"] { background-color: #6c757d; } /* RESET button */
+	</style>
+</head>
+<body>
+
+<div class="form-container">
+	<form action="ADD PRODUCT.php" method="POST">
+		<h1>ADD OR REMOVE PRODUCT</h1>
+		
+		PRODUCT_NAME:<br>
+		<input type="text" name="PRODUCT_NAME" required>
+		
+		Product_Category:<br>
+		<input type="text" name="product_category" required>
+		
+		Brand:<br>
+		<input type="text" name="brand" required>
+		
+		Contact_no:<br>
+		<input type="text" name="contact_no" required>
+		
+		Email:<br>
+		<input type="text" name="Email" required>
+		
+		Address:<br>
+		<input type="text" name="ADDRESS" required>
+
+		<div class="button-group">
+			<button type="submit" name="submit_supplier">ADD</button>
+			<button type="submit" name="remove_product">REMOVE</button>
+			<button type="reset">Reset</button>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>
